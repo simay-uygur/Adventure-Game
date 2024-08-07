@@ -1,6 +1,10 @@
 public class River extends BattleLoc{
 
-    public BattleLoc(new Bear()){
-
+    public River(){
+        Bear b = null;
+        battleLoc(b);
     }
+
+    //battle and money
+    //water
 }

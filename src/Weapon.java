@@ -1,15 +1,8 @@
-public class Enemy {
+abstract class Weapon {
+
     private int id;
     private int damage;
-    private int health;
     private int money;
-
-    public Enemy() {
-        this.id = 0;
-        this.damage = 0;
-        this.health = 0;
-        this.money = 0;
-    }
 
     public int getId() {
         return id;
@@ -27,14 +20,6 @@ public class Enemy {
         this.damage = damage;
     }
 
-    public int getHealth() {
-        return health;
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
     public int getMoney() {
         return money;
     }
@@ -43,5 +28,12 @@ public class Enemy {
         this.money = money;
     }
 
-
+    @Override
+    public String toString() {
+        return "Weapon{" +this.getClass().toString()+ " "+
+                "id=" + id +
+                ", damage=" + damage +
+                ", money=" + money +
+                '}';
+    }
 }

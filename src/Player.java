@@ -8,7 +8,15 @@ public class Player {
     int money;
     String name;
     int id;
-    int currentHealt;
+    int currentHealth;
+    Armor armor;
+    Weapon weapon;
+
+    public Player() {
+        armor = null;
+        weapon = null;
+        Inventory inventory = null; //for now
+    }
 
     public void selectChar(){
         Scanner scan = new Scanner(System.in);
@@ -45,6 +53,6 @@ public class Player {
         this.damage = damage;
         this.health = health;
         this.money = money;
-        this.currentHealt = health;
+        this.currentHealth = health;
     }
 }
