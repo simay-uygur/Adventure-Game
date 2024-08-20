@@ -2,12 +2,14 @@ import java.util.Random;
 
 public class BattleLoc extends Location{
 
-    public Enemy[] enemy;
+    private Enemy[] enemy;
+    private int enemyNumber;
 
     public void battleLoc(Enemy e )
     {
         String typeEnemy = (e.getClass().toString());
         int randomAmount = (int) (Math.random() * 3) + 1;
+        enemyNumber = randomAmount;
 
         switch (typeEnemy){
             case "Zombie":
@@ -26,8 +28,12 @@ public class BattleLoc extends Location{
                 break;
         }
     }
-//onlocation method (does id have to be implemented again?)
+//onlocation method (does id have to be implemented again?)   i wont use it
     public void combat(){
+
+    }
+
+    public void gift(){
 
     }
 }

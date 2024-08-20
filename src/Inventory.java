@@ -9,6 +9,13 @@ public class Inventory {
     private int armorDefence;
 
     public Inventory() {
+        this.water = false;
+        this.food = false;
+        this.firewood = false;
+        weaponDamage = 0;
+        armorDefence = 0;
+        weaponName = "";
+        armorName = "";
     }
 
     public boolean isWater() {

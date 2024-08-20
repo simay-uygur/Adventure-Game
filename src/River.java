@@ -7,4 +7,8 @@ public class River extends BattleLoc{
 
     //battle and money
     //water
+    @Override
+    public void gift(){
+        //getPlayer().
+    }
 }

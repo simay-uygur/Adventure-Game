@@ -4,9 +4,11 @@ public class SafeHouse extends Location{
     }
 
     public void heal(){
-        if(!(getPlayer().health <= 0)){
+        if(!getPlayer().isPlayerDead()){
             System.out.println("The player is healed");
-            getPlayer().currentHealth =  getPlayer().health; //not sure  do the tests.
+            getPlayer().heal(); //not sure  do the tests.
+        } else {
+            System.out.println("The player is dead");
         }
     }
 }

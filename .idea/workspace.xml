@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="139e4e5f-cc0a-4220-b5a7-36eee169eb48" name="Changes" comment="The class structure is done.">
-      <change afterPath="$PROJECT_DIR$/src/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HeavyArmor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LightArmor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MediumArmor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Revolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rifle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Weapon.java" afterDir="false" />
+    <list default="true" id="139e4e5f-cc0a-4220-b5a7-36eee169eb48" name="Changes" comment="Most of the classes are done. Toolstore and related functions. Player has armor and weapon variables now. Battling algorithms are not implemented.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adventure Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Adventure Game.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BattleLoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BattleLoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Forest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/River.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/River.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SafeHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SafeHouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ToolStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vampire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vampire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zombie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,33 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/simayy/IdeaProjects/Adventure Game&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/simayy/IdeaProjects/Adventure Game/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/simayy/IdeaProjects/Adventure Game",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/simayy/IdeaProjects/Adventure Game/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +89,14 @@
       <workItem from="1722087487181" duration="976000" />
       <workItem from="1722094033040" duration="7480000" />
       <workItem from="1722411668844" duration="64000" />
-      <workItem from="1722939990541" duration="6258000" />
+      <workItem from="1722939990541" duration="6824000" />
+      <workItem from="1723538160308" duration="752000" />
+      <workItem from="1723663689544" duration="2000" />
+      <workItem from="1723798169964" duration="1150000" />
+      <workItem from="1723911038108" duration="169000" />
+      <workItem from="1723911249470" duration="888000" />
+      <workItem from="1723916564827" duration="1000" />
+      <workItem from="1724158618894" duration="4460000" />
     </task>
     <task id="LOCAL-00001" summary="The class structure is done.">
       <option name="closed" value="true" />
@@ -122,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722411723448</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Most of the classes are done. Toolstore and related functions. Player has armor and weapon variables now. Battling algorithms are not implemented.">
+      <option name="closed" value="true" />
+      <created>1723027353412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723027353412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="The class structure is done." />
-    <option name="LAST_COMMIT_MESSAGE" value="The class structure is done." />
+    <MESSAGE value="Most of the classes are done. Toolstore and related functions. Player has armor and weapon variables now. Battling algorithms are not implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Most of the classes are done. Toolstore and related functions. Player has armor and weapon variables now. Battling algorithms are not implemented." />
   </component>
 </project>

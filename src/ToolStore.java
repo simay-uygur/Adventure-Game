@@ -24,6 +24,8 @@ public class ToolStore extends Location{
         System.out.printf("%nDo you want to buy or exit the store?%n Press B for buy E for exit. Then press enter. ");
         Scanner in = new Scanner(System.in);
         String str = in.next();
+        in.close();
+
         if(str.equalsIgnoreCase("B")){
             buy();
         } else if(str.equalsIgnoreCase("E")){
@@ -31,7 +33,6 @@ public class ToolStore extends Location{
             //in.close();
             menu();
         }
-        in.close();
     }
 
     void buy(){
@@ -41,6 +42,8 @@ public class ToolStore extends Location{
         String category = in.next();
         System.out.println("Please enter the id of the thing you want to buy: ");
         int id = in.nextInt();
+        in.close();
+
         if(id >=2 && id <0) {
             System.out.println("Please enter a valid id.");
             in.close();
@@ -48,17 +51,19 @@ public class ToolStore extends Location{
         }
 
         if(category.equalsIgnoreCase("A")){
-            if(getPlayer().money >= armors[id].getMoney()){
-                getPlayer().money = getPlayer().money - armors[id].getMoney();
-                getPlayer().armor = armors[id];
+            if(getPlayer().getMoney() >= armors[id].getMoney()){
+                getPlayer().increaseOrDecreaseMoney(-armors[id].getMoney());
+                getPlayer().getInventory().setArmorName(armors[id].getClass().toString());
+                getPlayer().getInventory().setArmorDefence(armors[id].getBlocking());
             } else {
                 System.out.println("You don't have enough money to buy this armor.");
             }
 
         } else if (category.equalsIgnoreCase("W")){
-            if(getPlayer().money >= armors[id].getMoney()){
-                getPlayer().money = getPlayer().money - armors[id].getMoney();
-                getPlayer().armor = armors[id];
+            if(getPlayer().getMoney() >= weapons[id].getMoney()){
+                getPlayer().increaseOrDecreaseMoney(-weapons[id].getMoney());
+                getPlayer().getInventory().setWeaponName(weapons[id].getClass().toString());
+                getPlayer().getInventory().setWeaponDamage(weapons[id].getDamage());
             } else {
                 System.out.println("You don't have enough money to buy this armor.");
             }
@@ -67,8 +72,6 @@ public class ToolStore extends Location{
             menu();
         }
 
-        in.close();
     }
 }
 
-//another implementation may be with a helper class for all scanner input output operations
