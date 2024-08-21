@@ -1,14 +1,14 @@
 public class BattleLoc extends Location{
 
-    private Enemy[] enemy = new Enemy[3];
+    private Enemy[] enemy = new Enemy[5];
     private int enemyNumber;
     private Game game;
 
-    public void battleLoc(Enemy e )
+    public void battleLoc(Enemy e  ,int  number)
     {
         String typeEnemy = (e.getClass().toString());
-        int randomAmount = (int) (Math.random() * 3) + 1;
-        if(randomAmount <= 0 || randomAmount >3) randomAmount = 1;
+        int randomAmount = (int) (Math.random() * number) + 1;
+        if(randomAmount <= 0 || randomAmount > number) randomAmount = 1;
         enemyNumber = randomAmount;
 
         switch (typeEnemy){
@@ -34,14 +34,19 @@ public class BattleLoc extends Location{
             break;
         }
     }
-//onlocation method (does id have to be implemented again?)   i wont use it
+
     public void combat(){
         int playerDamage = getPlayer().getDamage();
         int enemyDamage = enemy[0].getDamage();
         System.out.println("Battle starts... ");
         while (!getPlayer().isPlayerDead() && !isAllEnemiesDead()){
-            System.out.println("Player attacks " + playerDamage );
-            attackEnemy(-playerDamage);
+            int attackpriority = (int) (Math.random() * 2);
+
+            if(attackpriority == 0){
+                System.out.println("Player attacks first " + playerDamage );
+                attackEnemy(-playerDamage);
+            }
+
             for(int s=0; s<enemyNumber; s++){
                 System.out.println("Enemy attacks " + enemyDamage);
                 getPlayer().damagePlayer(enemyDamage);
@@ -50,6 +55,11 @@ public class BattleLoc extends Location{
                     game.over();
                     return;
                 }
+            }
+
+            if(attackpriority == 1){
+                System.out.println("Player attacks last " + playerDamage );
+                attackEnemy(-playerDamage);
             }
         }
 
@@ -85,5 +95,9 @@ public class BattleLoc extends Location{
 
     public void setGame(Game game) {
         this.game = game;
+    }
+
+    public int getEnemyNumber() {
+        return enemyNumber;
     }
 }

@@ -54,10 +54,8 @@ public class Game {
 
     public void over(){
         System.out.println("The player is dead, and game is over.");
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Do you want to play again? (Y/N)");
         String ans = inputHandler.getInput();
-        scanner.close();
         if(ans.equals("Y")){
             System.out.println("Starting game again... ");
             start();
@@ -74,7 +72,7 @@ public class Game {
             battleLoc.setPlayer(player);
             battleLoc.combat();
             battleLoc.setPlayer(null);
-        } else if(location instanceof NormalLoc){
+        } else if(location instanceof SafeHouse){
             safeHouse.setPlayer(player);
             safeHouse.heal();
             safeHouse.setPlayer(null);

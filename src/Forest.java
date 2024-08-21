@@ -1,14 +1,16 @@
 public class Forest extends BattleLoc{
+    Vampire v;
 
     public Forest (){
-        Vampire v = new Vampire();
-        battleLoc(v);
+        this.v = new Vampire();
+        battleLoc(v, 3);
     }
 
     @Override
     public void gift(){
         getPlayer().getInventory().setFirewood(true);
-        getPlayer().increaseOrDecreaseMoney(+40);  //kafama göre verdim
+        getPlayer().increaseOrDecreaseMoney(getEnemyNumber() * v.getMoney());
+        System.out.println("\nEntered forest is conquered.");
     }
 
 }
