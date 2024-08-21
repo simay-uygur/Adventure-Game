@@ -2,7 +2,7 @@ public class River extends BattleLoc{
 
     public River(){
         Bear b = new Bear();
-        battleLoc(b); //may be done with strings
+        battleLoc(b);
     }
 
     @Override

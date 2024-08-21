@@ -1,9 +1,8 @@
-import java.util.Random;
-
 public class BattleLoc extends Location{
 
     private Enemy[] enemy = new Enemy[3];
     private int enemyNumber;
+    private Game game;
 
     public void battleLoc(Enemy e )
     {
@@ -48,6 +47,7 @@ public class BattleLoc extends Location{
                 getPlayer().damagePlayer(enemyDamage);
                 if(getPlayer().isPlayerDead()){
                     System.out.println("Player dead");  //game over
+                    game.over();
                     return;
                 }
             }
@@ -57,7 +57,7 @@ public class BattleLoc extends Location{
             System.out.println("All enemies dead. You got the gift.");
             gift();
         } else if(getPlayer().isPlayerDead()){
-            Game.over();
+            game.over();
         }
     }
 
@@ -81,5 +81,9 @@ public class BattleLoc extends Location{
 
     public void gift(){
         System.out.println("Nothing happens here.");
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
     }
 }
