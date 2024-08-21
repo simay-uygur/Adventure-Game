@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="139e4e5f-cc0a-4220-b5a7-36eee169eb48" name="Changes" comment="Game over and updatePlayerLocation methods done.">
-      <change afterPath="$PROJECT_DIR$/src/class-diagram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="139e4e5f-cc0a-4220-b5a7-36eee169eb48" name="Changes" comment="Readme update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -110,7 +111,7 @@
       <workItem from="1723916564827" duration="1000" />
       <workItem from="1724158618894" duration="5413000" />
       <workItem from="1724230534319" duration="4226000" />
-      <workItem from="1724236847999" duration="6949000" />
+      <workItem from="1724236847999" duration="7262000" />
     </task>
     <task id="LOCAL-00001" summary="The class structure is done.">
       <option name="closed" value="true" />
@@ -192,7 +193,47 @@
       <option name="project" value="LOCAL" />
       <updated>1724245710546</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Class diagram jpg upload">
+      <option name="closed" value="true" />
+      <created>1724248816903</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724248816903</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Readme update">
+      <option name="closed" value="true" />
+      <created>1724248866599</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724248866599</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Readme update">
+      <option name="closed" value="true" />
+      <created>1724248915397</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724248915397</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Readme update">
+      <option name="closed" value="true" />
+      <created>1724249001915</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724249001915</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Readme update">
+      <option name="closed" value="true" />
+      <created>1724249005299</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724249005299</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +249,9 @@
     <MESSAGE value="combat method and getclass returning class Zombie etc corrections" />
     <MESSAGE value="isEnemyDead, increaseDecreaseHealth in Enemy class" />
     <MESSAGE value="Game over and updatePlayerLocation methods done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Game over and updatePlayerLocation methods done." />
+    <MESSAGE value="Class diagram jpg upload" />
+    <MESSAGE value="Readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
