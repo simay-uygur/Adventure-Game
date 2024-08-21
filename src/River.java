@@ -1,14 +1,13 @@
 public class River extends BattleLoc{
 
     public River(){
-        Bear b = null;
-        battleLoc(b);
+        Bear b = new Bear();
+        battleLoc(b); //may be done with strings
     }
 
-    //battle and money
-    //water
     @Override
     public void gift(){
-        //getPlayer().
+        getPlayer().getInventory().setWater(true);
+        getPlayer().increaseOrDecreaseMoney(+10);
     }
 }
