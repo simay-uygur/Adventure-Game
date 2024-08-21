@@ -9,15 +9,16 @@ public class Player {
     private String name;
     private int id;
     private int currentHealth;
+    private final InputHandler inputHandler;
 
-    public Player() {
-        Inventory inventory = null; //for now
+    public Player(InputHandler inputHandler) {
+        this.inputHandler = inputHandler;
+        this.inventory = new Inventory();
     }
 
     public void selectChar(){
-        Scanner scan = new Scanner(System.in);
         System.out.println("WHAT CHAR DO YOU WANT TO BE : (S)amurai, (A)rcher, (K)night. (press key and enter)");
-        String input = scan.next();
+        String input =  inputHandler.getInput();
         boolean hasSelectedValid = true;
 
         do{
@@ -34,12 +35,11 @@ public class Player {
                 default:
                     System.out.println("Please enter a valid char.");
                     System.out.println("WHAT CHAR DO YOU WANT TO BE : (S)amurai, (A)rcher, (K)night. (press key and enter)");
-                    input = scan.next();
+                    input = inputHandler.getInput();
                     hasSelectedValid = false;
                     break;
             }
         } while (!hasSelectedValid);
-        scan.close();
     }
 
     private void setAllFeatures(int id, String name, int damage, int health, int money){
@@ -71,7 +71,6 @@ public class Player {
         this.currentHealth -= damage;
     }
 
-
     public void increaseOrDecreaseMoney(int amount){
         this.money += amount;
     }
@@ -83,11 +82,6 @@ public class Player {
     public int getMoney() {
         return money;
     }
-
-
-
-
-
 
     public Inventory getInventory() {
         return inventory;
