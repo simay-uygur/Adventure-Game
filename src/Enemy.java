@@ -43,5 +43,12 @@ public class Enemy {
         this.money = money;
     }
 
+    public boolean isDead(){
+        return health <= 0;
+    }
+
+    public void increaseOrDecreaseHealth(int amount){
+        this.health += amount;
+    }
 
 }
